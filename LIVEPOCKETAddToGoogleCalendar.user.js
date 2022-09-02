@@ -1,3 +1,13 @@
+// ==UserScript==
+// @name         livepocketのイベント概要Googleカレンダー連携
+// @namespace    http://ayebee.net/
+// @version      1.1
+// @description  livepocketのイベント概要ページに、イベント内容のGoogleカレンダー登録ボタンを追加します。
+// @author       ayebee
+// @match        https://t.livepocket.jp/e/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=livepocket.jp
+// @grant        none
+// ==/UserScript==
 (function() {
     'use strict';
  
