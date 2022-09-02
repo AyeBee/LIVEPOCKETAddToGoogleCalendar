@@ -1,0 +1,2 @@
+# LIVEPOCKETAddToGoogleCalendar
+livepocketのイベント概要ページに、イベント内容のGoogleカレンダー登録ボタンを追加します。
