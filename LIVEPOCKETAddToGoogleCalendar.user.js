@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         livepocketのイベント概要Googleカレンダー連携
 // @namespace    http://ayebee.net/
-// @version      1.1
+// @version      1.2
 // @description  livepocketのイベント概要ページに、イベント内容のGoogleカレンダー登録ボタンを追加します。
 // @author       ayebee
 // @match        https://t.livepocket.jp/e/*
@@ -38,7 +38,6 @@
     出演者: ${data.artists}
     日程: ${date} 開場${time[0]} 開演${time[1]}
     会場: ${data.location}
-
     ${data.description}
     `.trim();
 
