@@ -35,12 +35,12 @@
     };
 
     data.details = `
-    出演者: ${data.artists}
-    日程: ${date} 開場${time[0]} 開演${time[1]}
-    会場: ${data.location}
-    
-    ${data.description}
-    `.trim();
+出演者: ${data.artists}
+日程: ${date} 開場${time[0]} 開演${time[1]}
+会場: ${data.location}
+
+${data.description}
+`.trim();
 
     const button = document.createElement('a');
     button.className = 'map-link';
