@@ -1,14 +1,3 @@
-// ==UserScript==
-// @name         livepocketのイベント概要Googleカレンダー連携
-// @namespace    http://ayebee.net/
-// @version      1.1
-// @description  livepocketのイベント概要ページに、イベント内容のGoogleカレンダー登録ボタンを追加します。
-// @author       ayebee
-// @match        https://t.livepocket.jp/e/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=livepocket.jp
-// @grant        none
-// ==/UserScript==
-
 (function() {
     'use strict';
  
@@ -42,5 +31,10 @@
     ${data.description}
     `.trim();
 
-    window.open(`https://www.google.com/calendar/render?action=TEMPLATE&text=${data.text}&dates=${data.dates}&location=${data.location}&details=${encodeURIComponent(data.details)}`, '_blank');
+    const button = document.createElement('a');
+    button.className = 'map-link';
+    button.rel = 'external';
+    button.textContent = 'Google Calendar に登録';
+    button.href = `https://www.google.com/calendar/render?action=TEMPLATE&text=${data.text}&dates=${data.dates}&location=${data.location}&details=${encodeURIComponent(data.details)}`;
+    document.querySelector('#information section.data').append(button);
 })();
